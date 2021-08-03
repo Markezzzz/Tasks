@@ -1,0 +1,379 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-family: Segoe UI;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #BABABA;
+}
+
+.navbar-toggler{
+  border: 0;
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: local("Segoe UI"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@media (min-width: 1920px) {
+  .Banner {
+    width: 100%;
+    height: 793px;
+    background-color: #17A2B8;
+    color: white;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+
+  .Banner-content {
+    position: center;
+    width: 466px;
+    height: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: SegoeUI;
+    line-height: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Register-button {
+    width: 208px;
+    height: 56px;
+    background: #2F418A;
+    border-radius: 4px;
+    /*font-family: "Open Sans SemiBold";*/
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border-style: none;
+    align-self: center;
+  }
+
+  .Register-button-small {
+    width: 127px;
+    height: 38px;
+    background: #2F418A;
+    border-radius: 4px;
+    /*font-family: "Open Sans SemiBold";*/
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border-style: none;
+    align-self: center;
+  }
+
+  .Text-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .Text-Content {
+    margin-right: 25px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    width: 50%;
+  }
+
+  .Text-Registration {
+    margin-left: 25px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    width: 50%;
+  }
+
+  .Table-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 48px;
+    font-family: Segoe UI;
+    text-align: center;
+  }
+
+  .Gallery-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    font-family: Segoe UI;
+    text-align: center;
+  }
+
+  .Speakers-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    font-family: Segoe UI;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .Profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Profile {
+    margin: 24px;
+  }
+
+  .Profile-image {
+    border: 1px solid #FFC107;
+    box-sizing: border-box;
+    border-radius: 60px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .Banner {
+    width: 100%;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background-color: #17A2B8;
+    color: white;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .Banner-content {
+    position: center;
+    width: 466px;
+    height: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: SegoeUI;
+    line-height: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .Text-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    align-items: flex-start;
+  }
+
+  .Text-Content {
+    margin-right: 25px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: initial;
+    color: #000000;
+  }
+
+  .Text-Registration {
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .Speakers-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    font-family: Segoe UI;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .Profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Profile {
+    
+  }
+
+  .Profile-image {
+    border: 1px solid #FFC107;
+    box-sizing: border-box;
+    border-radius: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Banner {
+    width: 100%;
+    height: 568px;
+    left: 0px;
+    top: 0px;
+    background-color: #17A2B8;
+    color: white;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .Banner-content {
+    position: center;
+    width: 466px;
+    height: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: SegoeUI;
+    line-height: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Text-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    align-items: flex-start;
+  }
+
+  .Text-Content {
+    display: none;
+    margin-right: 25px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: initial;
+    color: #000000;
+  }
+
+  .Text-Registration {
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .Speakers-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    font-family: Segoe UI;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .Profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Profile {
+
+  }
+
+  .Profile-image {
+    border: 1px solid #FFC107;
+    box-sizing: border-box;
+    border-radius: 60px;
+  }
+}
