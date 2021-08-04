@@ -5,31 +5,30 @@ public static void AddAndSort(ref KeyValuePair<int, string>[] array, KeyValuePai
 }
 
 private static void Sort(ref KeyValuePair<int, string>[] array)
-{
-    var count = 0;
-    while (count != array.Length - 1)
-    {
-        count = 0;
-        for (var j = array.Length - 1; j > 0; j--)
         {
-            if (array[j - 1].Key <= array[j].Key)
+            var count = 0;
+            while (count != array.Length - 1)
             {
-                count++;
-                continue;
+                count = 0;
+                for (var j = array.Length - 1; j > 0; j--)
+                {
+                    if (array[j - 1].Key <= array[j].Key)
+                    {
+                        count++;
+                        continue;
+                    }
+
+                    Swap(ref array, j, j - 1);
+                }
             }
-
-            array[j] = Swap(ref array, j);
         }
-    }
-}
 
-private static KeyValuePair<int, string> Swap(ref KeyValuePair<int, string>[] array, int j)
-{
-    var temp = array[j - 1];
-    array[j - 1] = array[j];
-    array[j] = temp;
-    return temp;
-}
+        private static void Swap(ref KeyValuePair<int, string>[] array, int indexA, int indexB)
+        {
+            var temp = array[indexA];
+            array[indexA] = array[indexB];
+            array[indexB] = temp;
+        }
 
 private static void AddElement(ref KeyValuePair<int, string>[] array, KeyValuePair<int, string> keyValuePair)
 {
