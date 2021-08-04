@@ -1,9 +1,13 @@
-public static void ReverseBubbleSort(ref KeyValuePair<int, string>[] array, KeyValuePair<int, string> keyValuePair)
+public static void AddAndSort(ref KeyValuePair<int, string>[] array, KeyValuePair<int, string> keyValuePair)
 {
     AddElement(ref array, keyValuePair);
+    Sort(ref array);
+}
 
+private static void Sort(ref KeyValuePair<int, string>[] array)
+{
     var count = 0;
-    while(count != array.Length - 1)
+    while (count != array.Length - 1)
     {
         count = 0;
         for (var j = array.Length - 1; j > 0; j--)
